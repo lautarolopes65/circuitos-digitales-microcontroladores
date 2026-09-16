@@ -1,63 +1,36 @@
 # Circuitos Digitales y Microcontroladores
 
-Collection of four practical assignments developed for the **Circuitos Digitales y Microcontroladores** course as part of the **Computer Engineering** degree at the **Universidad Nacional de La Plata (UNLP)**.
+Proyectos desarrollados usando **AVR-GCC** con firmware bare-metal y **Proteus** para la simulación de los circuitos electrónicos.
 
-The projects were developed using **AVR-GCC** with bare-metal programming and **Proteus** for electronic circuit simulation.
+## Proyectos
 
-## Projects
+### TP1 — Leds y Superloop No bloqueante
 
-### TP1 — Non-Blocking Super Loop
+Sistema de visualización basado en **multitarea cooperativa** mediante un superbucle no bloqueante.
 
-Development of a visualization system based on **cooperative multitasking** using a non-blocking super loop.
+El sistema controla:
 
-The system controls:
-
-* 8 LEDs connected to PORTD.
-* Two user push buttons.
-* An 8-LED WS2812/NeoPixel strip connected to PORTB0.
-* Two independent LED sequences.
-* Two independent NeoPixel sequences.
-
-The implementation does **not use interrupts or timer peripherals**. Timing is managed through non-blocking software techniques.
-
-**Main concepts:**
-
-* AVR bare-metal programming
-* GPIO
-* Cooperative multitasking
-* Non-blocking super loop
-* Push buttons
-* LED control
-* WS2812 / NeoPixel communication
+* 8 LEDs conectados a PORTD.
+* 2 pulsadores.
+* 8-LED WS2812/NeoPixel.
+* Dos secuencias LED independientes.
+* Dos secuencias NeoPixel independientes.
 
 ---
 
-### TP2 — Microwave Oven Controller
+### TP2 — Controlador de Microondas
 
-Development of a firmware controller for a domestic microwave oven using a **periodic finite state machine (FSM)** driven by a **timer interrupt**.
+Controlador de firmware para un horno microondas doméstico utilizando una **máquina de estados finitos (FSM) periódica** controlada por una **interrupción de timer**.
 
-The system includes:
+El sistema incluye:
 
 * 16x2 LCD display.
 * 4x4 matrix keypad.
-* Magnetron indicator.
-* Interior light indicator.
-* End-of-process alarm.
+* Luz interna indicadora.
+* Alarma end-of-process.
 * Cooking timer.
-* Start, stop, clear, pause and quick-start functions.
-* Door open/close simulation.
-
-The firmware was implemented using a periodic state machine and timer interrupts.
-
-**Main concepts:**
-
-* Finite State Machines (FSM)
-* Timer interrupts
-* Matrix keypad
-* LCD interface
-* GPIO
-* Timing and state management
-* Bare-metal AVR programming
+* Funciones start, stop, clear, pause y quick-start.
+* Simulación de apertura/cierre de puerta.
 
 ---
 
